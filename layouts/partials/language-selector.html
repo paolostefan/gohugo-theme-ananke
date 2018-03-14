@@ -1,0 +1,20 @@
+{{ $l := .Language }}
+{{ if .IsTranslated }}
+  <ul class="pl0 mr3">
+    {{/* https://gohugo.io/content-management/multilingual/#list-all-available-languages */}}
+    {{/* @see https://gohugo.io/content-management/multilingual/#link-to-translated-content */}}
+    {{ range .AllTranslations }}
+    <li class="list f6 f5-ns dib pr1">
+      {{ if eq $l .Language }}
+        <span class="white">
+          {{ .Language.LanguageName }}
+        </span>
+      {{ else }}
+        <a class="hover-white no-underline white-70" href="{{ .Permalink }}">
+          {{ .Language.LanguageName }}
+        </a>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+{{ end }}
