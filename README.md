@@ -1,3 +1,5 @@
+This is a fork of...
+
 # Ananke, A theme for [Hugo](http://gohugo.io/), a framework for building websites.
 
 The intent of this theme is to provide a solid starting place for Hugo sites with basic features and include best practices for performance, accessibility, and rapid development.
@@ -48,7 +50,7 @@ This theme uses the "Tachyons" CSS library. This will allow you to manipulate th
 Inside the folder of your Hugo site run:
 
     $ cd themes
-    $ git clone https://github.com/budparr/gohugo-theme-ananke.git
+    $ git clone https://github.com/paolostefan/gohugo-theme-ananke.git
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
