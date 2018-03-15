@@ -1,0 +1,19 @@
+{{ $l := .Language }}
+{{ if .IsTranslated }}
+{{ .Site.Params.readThisIn | default "Read this post in:" }}
+  <ul class="pl0 mr3">
+    {{/* https://gohugo.io/content-management/multilingual/#list-all-available-languages */}}
+    {{/* @see https://gohugo.io/content-management/multilingual/#link-to-translated-content */}}
+    {{ range .AllTranslations }}
+    <li class="list f6 f5-ns dib pr1">
+      {{ if ne $l .Language }}
+        <a class="" href="{{ .Permalink }}">
+          {{ .Language.LanguageName }}
+        </a>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+{{ else }}
+Not translated!
+{{ end }}
