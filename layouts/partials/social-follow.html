@@ -1,38 +1,44 @@
 <!-- TODO: Add follow intents where available TODO: Revisit color and hover color -->
-{{ $icon_size := "32px" }}
 {{ with .Site.Params.facebook }}
-  <a href="{{ . }}" class="link-transition facebook link dib z-999 pt3 pt0-l mr2" title="Facebook link">
+  <a href="{{ . }}" target="_blank" class="social-icon link-transition facebook link dib z-999 pt3 pt0-l mr2" title="Facebook profile">
     <i class="fab fa-facebook fa-lg"></i>
   </a>
 {{ end }}
+
 {{ with .Site.Params.stackoverflow }}
-  <a href="{{ . }}" class="link-transition stackoverflow link dib z-999 pt3 pt0-l mr2" title="Stackoverflow link">
+  <a href="{{ . }}" target="_blank" class="social-icon link-transition stackoverflow link dib z-999 pt3 pt0-l mr2" title="Stackoverflow profile">
     <i class="fab fa-stack-overflow fa-lg"></i>
   </a>
 {{ end }}
 
+{{ with .Site.Params.deviantart }}
+  <a href="{{ . }}" target="_blank" class="social-icon link-transition deviantart link dib z-999 pt3 pt0-l mr2" title="Deviantart Gallery">
+    <i class="fab fa-deviantart fa-lg"></i>
+  </a>
+{{ end }}
+
 {{ with .Site.Params.twitter }}
-  <a href="{{ . }}" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+  <a href="{{ . }}" target="_blank" class="social-icon link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter profile">
     <i class="fab fa-twitter fa-lg"></i>
   </a>
 {{ end }}
 {{ with .Site.Params.instagram }}
-  <a href="{{ . }}" class="link-transition instagram link dib z-999 pt3 pt0-l mr2" title="Instagram link">
+  <a href="{{ . }}" target="_blank" class="social-icon link-transition instagram link dib z-999 pt3 pt0-l mr2" title="Instagram profile">
     <i class="fab fa-instagram fa-lg"></i>
   </a>
 {{ end }}
 {{ with .Site.Params.youtube }}
-  <a href="{{ . }}" class="link-transition youtube link dib z-999 pt3 pt0-l mr2" title="Youtube link">
+  <a href="{{ . }}" target="_blank" class="social-icon link-transition youtube link dib z-999 pt3 pt0-l mr2" title="Youtube channel">
     <i class="fab fa-youtube fa-lg"></i>
   </a>
 {{ end }}
 {{ with .Site.Params.linkedin }}
-  <a href="{{ . }}" class="link-transition linkedin link dib z-999 pt3 pt0-l mr2" title="LinkedIn link">
+  <a href="{{ . }}" target="_blank" class="social-icon link-transition linkedin link dib z-999 pt3 pt0-l mr2" title="LinkedIn s">
     <i class="fab fa-linkedin fa-lg"></i>
   </a>
 {{ end }}
 {{ with .Site.Params.github }}
-  <a href="{{ . }}" class="link-transition github link dib z-999 pt3 pt0-l mr2" title="Github link">
+  <a href="{{ . }}" target="_blank" class="social-icon link-transition github link dib z-999 pt3 pt0-l mr2" title="Github profile">
     <i class="fab fa-github fa-lg"></i>
   </a>
 {{ end }}
