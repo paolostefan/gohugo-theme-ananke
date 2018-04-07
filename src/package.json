@@ -28,5 +28,10 @@
     "tachyons": "^4.7.0",
     "webpack": "^2.3.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.5",
+    "@fortawesome/fontawesome-free-brands": "^5.0.9",
+    "@fortawesome/fontawesome-free-regular": "^5.0.9",
+    "@fortawesome/fontawesome-free-solid": "^5.0.9"
+  }
 }
