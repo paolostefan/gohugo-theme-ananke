@@ -16,13 +16,4 @@ import styles from './../css/main.css';
 // var javascriptthingy = require('name/folder/file.js');
 
 import fontawesome from '@fortawesome/fontawesome'
-import brand from '@fortawesome/fontawesome-free-brands'
-
-fontawesome.library.add(brands.faDeviantart)
-fontawesome.library.add(brands.faGithub)
-fontawesome.library.add(brands.faStackOverflow)
-fontawesome.library.add(brands.faTwitter)
-fontawesome.library.add(brands.faLinkedin)
-fontawesome.library.add(brands.faYoutube)
-fontawesome.library.add(brands.faFacebook)
-fontawesome.library.add(brands.faInstagram)
+import brands from '@fortawesome/fontawesome-free-brands'
